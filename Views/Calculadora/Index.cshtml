@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Calculadora";
+}
+
+<h1>Calculadora :)</h1>
+<h3>Some, Subtraia, multiplique ou divida dois números</h3>
+
+<form asp-action="Result" method="post">
+
+    <label for="num1">Primeiro número</label>
+    <input type="number" name="num1" id="num1">
+    
+    <label for="num2">Segundo número</label>
+    <input type="number" name="num2" id="num2">
+
+    <hr>
+
+    <p>Selecione uma operação</p>
+    <select name="operacao">
+        <option value="Soma">Somar</option>
+        <option value="Subtração">Subtrair</option>
+        <option value="Multiplicação">Multiplicar</option>
+        <option value="Divisão">Dividir</option>
+    </select>
+
+    <hr>
+
+    <input type="submit" value="Calcular">
+</form>
